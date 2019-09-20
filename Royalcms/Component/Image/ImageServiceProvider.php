@@ -110,7 +110,7 @@ class ImageServiceProvider extends ServiceProvider
     {
         $royalcms = $this->royalcms;
         
-        $royalcms['image'] = $royalcms->share(function ($royalcms) {
+        $royalcms->singleton('image', function ($royalcms) {
             return new ImageManager($royalcms['config']->get('image::config'));
         });
         
