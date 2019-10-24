@@ -25,6 +25,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "5.0-dev"
+        },
+        "royalcms": {
+            "providers": [
+                "Royalcms\\Component\\Image\\ImageServiceProvider"
+            ],
+            "aliases": {
+                "RC_Image": "Royalcms\\Component\\Image\\Facades\\Image"
+            }
         }
     },
     "minimum-stability": "dev"
